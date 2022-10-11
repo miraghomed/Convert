@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/Spin1Main"
+        android:layout_width="279dp"
+        android:layout_height="56dp"
+        android:entries="@array/mira"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <Button
+        android:id="@+id/btnConvMain"
+        android:onClick="convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="convert"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <EditText
+        android:id="@+id/etValueMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <Spinner
+        android:id="@+id/Spin2Main"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
+        android:entries="@array/mira"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="458dp" />
+
+
+    <TextView
+        android:id="@+id/tvResMain"
+        android:layout_width="201dp"
+        android:layout_height="38dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <ImageView
+        android:id="@+id/ivCurrency1Main"
+        android:layout_width="76dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/dollar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <ImageView
+        android:id="@+id/ivCurrency2Main"
+        android:layout_width="79dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/euro"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="411dp"
+        android:layout_height="218dp"
+        app:srcCompat="@drawable/__1_"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-5dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="595dp" >
+
+        <RadioButton
+            android:id="@+id/rbB1"
+            android:onClick="click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="light mode"
+            tools:ignore="OnClick" />
+
+        <RadioButton
+            android:id="@+id/rbB2"
+            android:onClick="click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dark mode"
+            tools:ignore="OnClick" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
